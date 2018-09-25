@@ -11,6 +11,7 @@
 
 ```
 $ cf push -f manifest.yml
+```
 
 ## Demonstrate Services
 
@@ -18,23 +19,27 @@ $ cf push -f manifest.yml
 
 ```
 $ cf create-service cf create-service cleardb spark attendee-db
+```
 
 ### Bind service
 
 ```
 $ cf bind-service attendee attendee-db
+```
 
 ### Create user provided service instance
 
 ```
 $ cf create-user-provided-service attendee-service -p uri
 $ cf bind-service articulate attendee-service
+```
 
 ## Demonstrate Blue-Green
 
 ```
 $ cf map-route articulate-v2 cfapps.io -n articulate-sleepy-possum
 $ cf unmap-route articulate cfapps.io -n articulate-sleepy-possum
+```
 
 ## Demonstrate Metrics
 
