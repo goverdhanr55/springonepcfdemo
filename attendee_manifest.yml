@@ -1,0 +1,8 @@
+---
+applications:
+- name: attendee
+  memory: 768M
+  instances: 1
+  random-route: true
+  path: target/attendee-1.0.jar
+  services: []

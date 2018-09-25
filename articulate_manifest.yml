@@ -1,0 +1,8 @@
+---
+applications:
+- name: articulate
+  memory: 768M
+  instances: 1
+  random-route: true
+  path: target/articulate-1.0.jar
+  services: []

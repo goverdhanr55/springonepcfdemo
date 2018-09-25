@@ -1,0 +1,10 @@
+applications:
+- name: articulate-v2
+  disk_quota: 1G
+  instances: 1
+  memory: 768M
+  path: target/articulate-1.0.jar
+  services: []
+  routes:
+  - route: articulate-sleepy-possum-temp.cfapps.io
+  stack: cflinuxfs2
